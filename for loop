@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+    
+   
+    string num[11] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine","even","odd"};
+    int a,b;
+    cin>>a>>b;
+    for(int i=a;i<=b;i++){
+        if(i<=9){
+            cout<<num[i-1]<<endl;
+
+        }
+        else{
+            if(i%2==0){
+                cout<<num[9]<<endl;
+            }
+            else{
+                cout<<num[10]<<endl;
+            }
+        }
+    }
+    // Write Your Code Here
+
+    return 0;
+}
+    
